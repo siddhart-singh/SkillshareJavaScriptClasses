@@ -1,10 +1,10 @@
 class Person {
   static species() {
-    return 'Homo sapiens';
+    return "Homo sapiens";
   }
 
   static speciesSentence() {
-    return `Humans are classified as ${this.species()}`
+    return `Humans are classified as ${this.species()}`;
   }
 
   constructor(firstName, lastName) {
@@ -37,3 +37,6 @@ class Worker extends Person {
     this.job = job;
   }
 }
+
+const worker1 = new Worker("Siddhart", "Singh", "Software Developer");
+console.log(worker1.fullName());
