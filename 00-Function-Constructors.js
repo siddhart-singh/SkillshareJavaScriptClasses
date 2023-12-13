@@ -23,5 +23,4 @@ function Person(firstName, lastName) {
   };
 }
 
-let person1 = new Person("Siddhart", "Singh");
-console.log(person1.getSecret(), person1.secret);
+

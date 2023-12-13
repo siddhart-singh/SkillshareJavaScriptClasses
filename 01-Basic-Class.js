@@ -1,3 +1,5 @@
+"use strict";
+
 class Person {
   constructor(firstName, lastName) {
     this.firstName = firstName;
@@ -9,11 +11,11 @@ class Person {
     return `${this.firstName} ${this.lastName}`;
   }
 
-  setFirstName(firstName) {
-    this.firstName = firstName;
+  setFirstName(name) {
+    this.firstName = name;
   }
 
-  setLastName(lastName) {
-    this.lastName = lastName;
+  setLastName(name) {
+    this.lastName = name;
   }
 }
