@@ -1,10 +1,10 @@
 class Person {
   static get species() {
-    return 'Homo sapiens';
+    return "Homo sapiens";
   }
 
   static speciesSentence() {
-    return `Humans are classified as ${this.species}`
+    return `Humans are classified as ${this.species()}`;
   }
 
   constructor(firstName, lastName) {
@@ -26,7 +26,7 @@ class Person {
   }
 
   set setFullName(name) {
-    name = name.split(' ');
+    name = name.split(" ");
     this.setFirstName(name[0]);
     this.setLastName(name[1]);
   }
@@ -44,7 +44,6 @@ class Worker extends Person {
   }
 
   get biography() {
-    const bio = `${this.fullName()} is a ${this.job}`.toUpperCase();
-    return bio;
+    return `${this.fullName()} is a ${this.job}`.toUpperCase();
   }
 }
